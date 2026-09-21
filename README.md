@@ -1,42 +1,40 @@
-# sv
+# Attennda
+> [!INFO]
+> Not to be confused with the Portuguese word, "Atenda."
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Attendance tracking designed for public events and sets, not educational institutions. | It seems like every attendance tracking software nowadays is either paid or centered around schools and private institutions. Attennda's here to fix that.
 
-## Creating a project
+# Installation & Deployment
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Hosting locally (not for production)
+Requirements:
+  - A computer running Windows, macOS, or Linux.
+  - Node.js 22
+  - Git
 
-```sh
-# create a new project
-npx sv create my-app
 ```
-
-To recreate this project with the same configuration:
-
-```sh
-# recreate this project
-pnpm dlx sv@0.17.0 create --template minimal --types jsdoc --install pnpm .
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
+git pull https://github.com/columnlabs/Attennda
+cd Attennda
+npm i
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+## Deploying for production with Vercel
+Requirements:
+  - An account with [Vercel](https://vercel.com/)
+  - A web browser!
 
-To create a production version of your app:
+To deploy Attennda to Vercel for production hosting, fork this repo into your personal account or clone it and push it to an organization you're part of, and the open [Vercel](https://vercel.com/), log into your dashboard, and select the cloned repo when creating a new project. After a few minutes, Vercel will spit out your Attennda link.
 
-```sh
-npm run build
-```
+---
+Alternatively, you can build and deploy Attennda from the command line on a Linux, Windows, or macOS machine. You will need to have Node.js v22 installed.
 
-You can preview the production build with `npm run preview`.
+Step 1. Install Vercel with npm
+  - ``npm i -g vercel``
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Step 2. Log into Vercel
+  - ``vercel login``
+
+Step 3. Build and deploy
+  - For non-production/testing: ``vercel``
+  - For production: ``vercel deploy --prod``
