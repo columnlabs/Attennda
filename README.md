@@ -1,5 +1,6 @@
 # Attennda
-> [!INFO]
+
+> [!NOTE]
 > Not to be confused with the Portuguese word, "Atenda."
 
 Attendance tracking designed for public events and sets, not educational institutions. | It seems like every attendance tracking software nowadays is either paid or centered around schools and private institutions. Attennda's here to fix that.
